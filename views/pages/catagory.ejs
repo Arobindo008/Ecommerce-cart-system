@@ -1,0 +1,306 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="CSS/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Catalog page</title>
+</head>
+<body>
+     <!-- Header Start-->
+     <header class="py-4 shadow-sm bg-white">
+        <div class="container flex items-center justify-end">
+
+           <!--logo-->
+            <a href="index.ejs">
+                <img src="images/asollogo.png" class="w-20 ml-6 mr-36">
+                
+            </a>
+
+            <!--searchbar-->
+            <form method="get" action="/search">
+            <div class="w-full max-w-xl relative flex mr-16">
+                <span class="absolute left-2 top-3 text-lg text-gray-400">
+                    <i class="fas fa-search"></i>
+                </span>
+                
+                <input type="text" name="name" class="w-full border border-red-500 border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="Search">
+        
+               
+                <button class="bg-red-500 border-green-500 text-white px-8 rounded-r-md">Search</button>
+            </div>
+           </form>
+
+            <!--icons-->
+
+             <div class="flex items-center space-x-8 ml-16 mr-16">
+                <a href="/cart/" class="text-center text-gray-700 relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                     <div class="text-xs leading-3">
+                       Cart
+                     </div>
+                    
+                </a>
+                <a href="#" class="text-center text-gray-700 relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-user-large"></i>
+                    </div>
+                     <div class="text-xs leading-3">
+                       Account
+                     </div>
+                    
+                </a>
+             </div>
+
+        </div>
+
+     </header>
+
+     <!-- Header end-->
+
+
+     <!-- navbar start-->
+
+    <nav class="bg-gray-800">
+      <div class="container flex ml-6"> 
+
+        <div class="px-8 py-4 bg-red-500 flex item-center cursor-pointer relative group">
+            <span class="text-white">
+                <i class="fas fa-bars"></i>
+            </span>
+            <span class="capitalize ml-2 text-white">All Categories</span>
+
+            <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-red-500 divide-dashed hidden group-hover:block">
+             <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+                <span class="ml-6  text-black text-sm font-bold">ELECTRONICS</span>
+             </a>
+             <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+                <span class="ml-6  text-black text-sm font-bold">CLOTHING</span>
+             </a>
+             <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+                <span class="ml-6  text-black text-sm font-bold">COSMETICS</span>
+             </a>
+             <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+                <span class="ml-6  text-black text-sm font-bold">GEROCERIES</span>
+             </a>
+             <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+                <span class="ml-6  text-black text-sm font-bold">SPORTS ITEMS</span>
+             </a>
+             <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+                <span class="ml-6  text-black text-sm font-bold">KITCHEN</span>
+             </a>
+             <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+                <span class="ml-6  text-black text-sm font-bold">TOOLS</span>
+             </a>
+             <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+                <span class="ml-6  text-black text-sm font-bold">BABY ITEMS</span>
+             </a>
+             <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+                <span class="ml-6  text-black text-sm font-bold">JEWELERY</span>
+             </a>
+                    
+             </div>
+              
+        </div>
+
+
+
+
+          <!--link start-->
+           <div class="flex items-center justify-between flex-grow pl-12">
+             <div class="flex items-center space-x-6 capitalize">
+                <a href="index.ejs" class="text-white hover:text-white transition">Home</a>
+                <a href="views/catagory.ejs" class="text-white hover:text-white transition">Shop</a>
+                <a href="#" class="text-white hover:text-white transition">Order Traking</a>
+                <a href="#" class="text-white hover:text-white transition">About Us</a>
+                <a href="#" class="text-white hover:text-white transition">Contact Us</a>
+                
+             </div>
+             <a href="#" class="text-white mr-16">Login/Register</a>
+
+           </div>
+
+          <!--link end-->
+      </div>
+    </nav>
+     <!-- navbar end-->
+
+       <!--link path start-->
+       <div class="container py-4 flex items-center gap-3 ml-6">
+          <a href="index.html" class="text-red-500 text-base">
+              <i class="fas fa-home"></i>
+          </a>
+          <span class="text-sm text-gray-400 ">
+             <i class="fas fa-chevron-right"></i>
+          </span>
+          <p class="text-gray-600 font-medium">shop</p>
+        
+       </div>
+
+
+       <!--link path end-->
+
+
+     <!--sidebar and product start-->
+   <div class="container grid grid-cols-4 gap-6 pt-4 pb-6 items-start">
+         <!--sidebar start-->
+         <div class="col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
+            <div class="divide-y divide-gray-200 space-y-5 ml-6">
+                <div>
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Catagories</h3>
+                    <div class="space-y-2">
+                        <!--single items-->
+                        <div class="flex items-center">
+                            <input  type="checkbox" id="cat1">
+                            <label for="cat1" class="text-gray-600 ml-3 coursor-pointer">Man</label>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input  type="checkbox" id="cat1">
+                            <label for="cat1" class="text-gray-600 ml-3 coursor-pointer">Woman</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input  type="checkbox" id="cat1">
+                            <label for="cat1" class="text-gray-600 ml-3 coursor-pointer">Baby</label>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <div class="divide-y divide-gray-200 space-y-16 mt-16 ml-6">
+                <div >
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">AVAILABILITY</h3>
+                    <div class="space-y-2">
+                        <!--single items-->
+                        <div class="flex items-center">
+                            <input  type="checkbox" id="cat1">
+                            <label for="cat1" class="text-gray-600 ml-3 coursor-pointer">In Stock</label>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input  type="checkbox" id="cat1">
+                            <label for="cat1" class="text-gray-600 ml-3 coursor-pointer">Pre Order</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input  type="checkbox" id="cat1">
+                            <label for="cat1" class="text-gray-600 ml-3 coursor-pointer">Out Stock</label>
+                        </div>
+        
+
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!--sidebar end-->
+
+          <!--product part start-->
+           <div class="col-span-3">
+            
+             <!--sorting part start-->
+             <div class="flex items-center mb-4">
+                <select class="w-44 text-sm text-gray-600  px-4 py-3 border-red-500 shadow-sm rounded  focus:ring-green-500 focus:border-red-500">
+
+                    <option>Default sorting</option>
+                    <option>Price low-high</option>
+                    <option>Price high-low</option>
+                    <option>latest product</option>
+                </select>
+             </div>             
+             <!--sorting part end-->
+
+             <!--product part start-->
+             <div class="grid grid-cols-3 gap-6">
+                <% result.forEach(function(item) { %>
+                <div class="bg-white shadow rounder overflow-hidden">
+                 <div class="relative">
+                     <img src="images/<%= item.image %>" class="w-44 h-44 ml-6">
+                </div>
+                  
+                 <!--product name-->
+                <div class="pt-4 pb-3 px-4 " >
+                  <a href="#">
+                     <h4 class=" font-medium text-lg mb-2 text-greay-800">
+                        <%= item.name %>
+                     </h4>
+                  </a>
+                     <div class="flex items-baseline mb-1 space-x-2">
+                         <p class="text-base text-red-500"><%= item.price %></p>
+                     </div>
+                     <div class="flex items-center">
+                         <div class="flex gap-1 tex-sm text-yellow-400">
+                             <span><i class="fas fa-star"></i></span>
+                             <span><i class="fas fa-star"></i></span>
+                             <span><i class="fas fa-star"></i></span>
+                             <span><i class="fas fa-star"></i></span>
+                             <span><i class="fas fa-star"></i></span>
+                         </div>
+                         <div class="text-xs text-gray-500 ml-3">(2500)</div>
+                     </div>
+                 </div>
+               <form action="/add_to_cart" method="post">
+                <input type="hidden" name="id" value="<%= item.id %>">
+                <input type="hidden" name="name" value="<%= item.name %>">
+                <input type="hidden" name="quantity" value="1">
+                <input type="hidden" name="price" value="<%= item.price %>">
+                <input type="hidden" name="image" value="<%= item.image %>">
+                <input type="submit" value="Add to cart" class="block w-full py-1 text-center text-white bg-red-500 border-red-500 rounded-b ">
+               </form>
+              
+                </div>
+                <% }) %>    
+           
+             </div>
+             
+
+             <!--product part end-->
+
+
+           </div>
+
+          <!--product part end-->
+       
+        </div>
+     
+
+     <!--sidebar and product end-->
+
+
+
+
+
+
+
+       <!--copyright-->
+       <div class="bg-gray-800 py-4 flex">
+        <div class="container flex text-center justify-between">
+            <p class="text-white text-center ml-6">A2ZWholesale - All Rights reserved</p>
+        </div>
+         
+                 <!--social media-->
+                 <div class="flex space-x-6 mr-16" >
+                
+                   <a href="#" class="text-white">
+                       <i class="fab fa-facebook-f"></i>
+                   </a>
+                   <a href="#" class="text-white">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <a href="#" class="text-white">
+                       <i class="fab fa-instagram"></i>
+                   </a>
+                   <a href="#" class="text-white">
+                       <i class="fab fa-linkedin-in"></i>
+                   </a>
+   
+                </div>
+      </div> 
+   
+   
+   </body>
+   </html>

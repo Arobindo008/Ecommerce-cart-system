@@ -1,0 +1,25 @@
+{
+  "name": "a2z",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss public/styles/tailwind.css -o public/styles/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-mysql-session": "^2.1.8",
+    "express-session": "^1.17.3",
+    "mysql": "^2.18.1",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "stripe": "^10.8.0",
+    "tailwindcss": "^3.1.8"
+  }
+}

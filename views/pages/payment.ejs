@@ -1,0 +1,210 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <style>@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body>
+      
+   <!-- Header Start-->
+   <header class="py-4 shadow-sm bg-white">
+    <div class="container flex items-center justify-end">
+
+       <!--logo-->
+        <a href="#">
+            <img src="images/asollogo.png" class="w-20 ml-6 mr-36">
+            
+        </a>
+
+        <!--searchbar-->
+        <div class="w-full max-w-xl relative flex mr-16">
+            <span class="absolute left-2 top-3 text-lg text-gray-400">
+                <i class="fas fa-search"></i>
+            </span>
+            <input type="text" class="w-full border border-red-500 border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="Search">
+             <button class="bg-red-500 border-green-500 text-white px-8 rounded-r-md">Search</button>
+        </div>
+
+        <!--icons-->
+
+         <div class="flex items-center space-x-8 ml-16 mr-16">
+            <a href="cart.html" class="text-center text-gray-700 relative">
+                <div class="text-2xl">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                 <div class="text-xs leading-3">
+                   Cart
+                 </div>
+                
+            </a>
+            <a href="#" class="text-center text-gray-700 relative">
+                <div class="text-2xl">
+                    <i class="fa-solid fa-user-large"></i>
+                </div>
+                 <div class="text-xs leading-3">
+                   Account
+                 </div>
+                
+            </a>
+         </div>
+
+    </div>
+
+ </header>
+
+ <!-- Header end-->
+
+  <!-- navbar start-->
+
+  <nav class="bg-gray-800">
+    <div class="container flex ml-6"> 
+
+      <div class="px-8 py-4 bg-red-500 flex item-center cursor-pointer relative group">
+          <span class="text-white">
+              <i class="fas fa-bars"></i>
+          </span>
+          <span class="capitalize ml-2 text-white">All Categories</span>
+
+          <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-red-500 divide-dashed hidden group-hover:block">
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">ELECTRONICS</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">CLOTHING</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">COSMETICS</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">GEROCERIES</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">SPORTS ITEMS</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">KITCHEN</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">TOOLS</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">BABY ITEMS</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">JEWELERY</span>
+           </a>
+                  
+           </div>
+            
+      </div>
+
+
+
+
+        <!--link start-->
+         <div class="flex items-center justify-between flex-grow pl-12">
+           <div class="flex items-center space-x-6 capitalize">
+              <a href="index.html" class="text-white hover:text-white transition">Home</a>
+              <a href="cat.html" class="text-white hover:text-white transition">Shop</a>
+              <a href="#" class="text-white hover:text-white transition">Order Traking</a>
+              <a href="#" class="text-white hover:text-white transition">About Us</a>
+              <a href="#" class="text-white hover:text-white transition">Contact Us</a>
+              
+           </div>
+           <a href="#" class="text-white mr-16">Login/Register</a>
+
+         </div>
+
+        <!--link end-->
+    </div>
+  </nav>
+   <!-- navbar end-->
+    
+
+
+<div class="container p-8 mx-auto mt-12 bg-white">
+    <div class="w-full overflow-x-auto">
+        <h4 class="text-2xl font-bold tracking-wider flex items-center justify-center">======Payment======</h4>
+    </div>
+
+    <div class="flex items-center justify-center w-full overflow-x-auto">
+<!-- Include the PayPal JavaScript SDK; replace "test" with your own sandbox Business account app client ID -->
+<script src="https://www.paypal.com/sdk/js?&client-id=AcEkF7eWUCR7kTI2toZWWyz4xAlqTVflPve7PaMTqYF-H2hKZRSi9r0Vgab6p1QOlitgRGn6uMGV_9UE&currency=USD"></script>
+    
+    <!-- Set up a container element for the button -->
+    <div id="paypal-button-container" class="flex items-center justify-center container p-8 mx-auto mt-12 bg-white"></div>
+
+    <script>
+      paypal.Buttons({
+
+        // Sets up the transaction when a payment button is clicked
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: '<%= total %>' // Can reference variables or functions. Example: `value: document.getElementById('...').value`
+              }
+            }]
+          });
+        },
+
+        // Finalize the transaction after payer approval
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            // Successful capture! For dev/demo purposes:
+                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                var transaction = orderData.purchase_units[0].payments.captures[0];
+                alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
+
+            // When ready to go live, remove the alert and show a success message within this page. For example:
+            // var element = document.getElementById('paypal-button-container');
+            // element.innerHTML = '';
+            // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+            // Or go to another URL:  actions.redirect('thank_you.html');
+          });
+        }
+      }).render('#paypal-button-container');
+
+    </script>
+    </div>
+  </div>
+</div>
+
+
+    <!--copyright-->
+    <div class="bg-gray-800 py-4 flex">
+        <div class="container flex text-center justify-between">
+            <p class="text-white text-center ml-6">A2ZWholesale - All Rights reserved</p>
+        </div>
+         
+                 <!--social media-->
+                 <div class="flex space-x-6 mr-16" >
+                
+                   <a href="#" class="text-white">
+                       <i class="fab fa-facebook-f"></i>
+                   </a>
+                   <a href="#" class="text-white">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <a href="#" class="text-white">
+                       <i class="fab fa-instagram"></i>
+                   </a>
+                   <a href="#" class="text-white">
+                       <i class="fab fa-linkedin-in"></i>
+                   </a>
+   
+                </div>
+      </div> 
+   
+
+  </body>
+</html>

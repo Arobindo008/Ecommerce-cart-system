@@ -1,0 +1,219 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <style>@import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body>
+      
+   <!-- Header Start-->
+   <header class="py-4 shadow-sm bg-white">
+    <div class="container flex items-center justify-end">
+
+       <!--logo-->
+        <a href="#">
+            <img src="images/asollogo.png" class="w-20 ml-6 mr-36">
+            
+        </a>
+
+        <!--searchbar-->
+        <div class="w-full max-w-xl relative flex mr-16">
+            <span class="absolute left-2 top-3 text-lg text-gray-400">
+                <i class="fas fa-search"></i>
+            </span>
+            <input type="text" class="w-full border border-red-500 border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="Search">
+             <button class="bg-red-500 border-green-500 text-white px-8 rounded-r-md">Search</button>
+        </div>
+
+        <!--icons-->
+
+         <div class="flex items-center space-x-8 ml-16 mr-16">
+            <a href="cart.html" class="text-center text-gray-700 relative">
+                <div class="text-2xl">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                 <div class="text-xs leading-3">
+                   Cart
+                 </div>
+                
+            </a>
+            <a href="#" class="text-center text-gray-700 relative">
+                <div class="text-2xl">
+                    <i class="fa-solid fa-user-large"></i>
+                </div>
+                 <div class="text-xs leading-3">
+                   Account
+                 </div>
+                
+            </a>
+         </div>
+
+    </div>
+
+ </header>
+
+ <!-- Header end-->
+
+  <!-- navbar start-->
+
+  <nav class="bg-gray-800">
+    <div class="container flex ml-6"> 
+
+      <div class="px-8 py-4 bg-red-500 flex item-center cursor-pointer relative group">
+          <span class="text-white">
+              <i class="fas fa-bars"></i>
+          </span>
+          <span class="capitalize ml-2 text-white">All Categories</span>
+
+          <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-red-500 divide-dashed hidden group-hover:block">
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">ELECTRONICS</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">CLOTHING</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">COSMETICS</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">GEROCERIES</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">SPORTS ITEMS</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">KITCHEN</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">TOOLS</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">BABY ITEMS</span>
+           </a>
+           <a href="#" class="flex items-center px-6  py-3 hover:bg-gray-100 transition">
+              <span class="ml-6  text-black text-sm font-bold">JEWELERY</span>
+           </a>
+                  
+           </div>
+            
+      </div>
+
+
+
+
+        <!--link start-->
+         <div class="flex items-center justify-between flex-grow pl-12">
+           <div class="flex items-center space-x-6 capitalize">
+              <a href="index.html" class="text-white hover:text-white transition">Home</a>
+              <a href="cat.html" class="text-white hover:text-white transition">Shop</a>
+              <a href="#" class="text-white hover:text-white transition">Order Traking</a>
+              <a href="#" class="text-white hover:text-white transition">About Us</a>
+              <a href="#" class="text-white hover:text-white transition">Contact Us</a>
+              
+           </div>
+           <a href="#" class="text-white mr-16">Login/Register</a>
+
+         </div>
+
+        <!--link end-->
+    </div>
+  </nav>
+   <!-- navbar end-->
+    <div class="w-full mx-auto rounded-lg p-5 text-gray-700 " >
+            
+            <div class="mb-10">
+                <h1 class="text-center font-bold text-2xl uppercase">Checkout Info</h1>
+            </div>
+            
+            <div class="mb-5">
+                <h1 class="text-center font-bold text-xl uppercase">Total Amount:<%= total %></h1>
+            </div>
+
+        <form method="post" action="/place_order">
+           
+            <div class="mb-3">
+                <label class="flex items-center justify-center font-bold text-sm mb-2 ml-1">Name</label>
+                <div class="flex items-center justify-center">
+                    <input class="w-1/2 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-500 transition-colors" placeholder="Your Name" type="text"  name="name">
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label class="flex items-center justify-center font-bold text-sm mb-2 ml-1">Email</label>
+                <div class="flex items-center justify-center">
+                    <input class="w-1/2 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-500 transition-colors" placeholder="Input Email" type="text"  name="email">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="flex items-center justify-center font-bold text-sm mb-2 ml-1">Phone</label>
+                <div class="flex items-center justify-center">
+                    <input class="w-1/2 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-500 transition-colors" placeholder="0000 0000 0000 0000" type="text" name="phone">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="flex items-center justify-center font-bold text-sm mb-2 ml-1">City</label>
+                <div class="flex items-center justify-center">
+                    <input class="w-1/2 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-500 transition-colors" placeholder="Input City" type="text"  name="city">
+                </div>
+            </div>
+
+            
+            
+            <div class="mb-10">
+                <label class="font-bold text-sm mb-2 ml-1 flex items-center justify-center">Address</label>
+                <div class="flex items-center justify-center">
+                    <input class="w-1/2 px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-500 transition-colors" placeholder="Input Address" type="text"  name="address">
+                </div>
+            </div>
+        
+            <div>
+             <form method="post" action="/payment">
+                <input type="submit" value="Place Order" class="block w-full max-w-xs mx-auto bg-gray-500 hover:bg-gray-700 focus:bg-gray-700 text-white rounded-lg px-3 py-3 font-semibold">
+            </form>
+            </div>
+        
+        
+        </form>
+
+    
+ 
+   </div>
+    <!--copyright-->
+    <div class="bg-gray-800 py-4 flex">
+        <div class="container flex text-center justify-between">
+            <p class="text-white text-center ml-6">A2ZWholesale - All Rights reserved</p>
+        </div>
+         
+                 <!--social media-->
+                 <div class="flex space-x-6 mr-16" >
+                
+                   <a href="#" class="text-white">
+                       <i class="fab fa-facebook-f"></i>
+                   </a>
+                   <a href="#" class="text-white">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <a href="#" class="text-white">
+                       <i class="fab fa-instagram"></i>
+                   </a>
+                   <a href="#" class="text-white">
+                       <i class="fab fa-linkedin-in"></i>
+                   </a>
+   
+                </div>
+      </div> 
+   
+
+  </body>
+</html>
